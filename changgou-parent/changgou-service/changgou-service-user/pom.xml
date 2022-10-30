@@ -14,6 +14,12 @@
 
 
     <dependencies>
+        <!--oauth2认证包-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+        </dependency>
+
         <!--依赖user-api-->
         <dependency>
             <groupId>com.changgou</groupId>

@@ -29,11 +29,11 @@ public class UserLoginController {
     @Autowired
     private LoginService loginService;
 
-    //客户端id
+    //客户端id   将配置核心配置文件中设置的客户端信息注入
     @Value("${auth.clientId}")
     private String clientId;
 
-    //客户端密钥
+    //客户端密钥  将配置核心配置文件中设置的客户端信息注入
     @Value("${auth.clientSecret}")
     private String clientSecret;
 
@@ -62,7 +62,7 @@ public class UserLoginController {
 
         //设置到cookie中
         saveCookie(authToken.getAccessToken());
-        return new Result<>(true, StatusCode.OK,"令牌生成成功",authToken);
+        return new Result<>(true, StatusCode.OK,"登录成功、令牌生成成功",authToken);
     }
 
     private void saveCookie(String token){

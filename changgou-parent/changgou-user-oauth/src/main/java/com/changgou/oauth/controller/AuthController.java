@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
  * @Description: com.changgou.oauth.controller
  ****/
 @RestController
-@RequestMapping(value = "/userx")
+@RequestMapping(value = "/userx")  //设置userx与user区分
 public class AuthController {
 
     //客户端ID

@@ -92,6 +92,8 @@ public class LoginServiceImpl implements LoginService {
 
 
     public static void main(String[] args) {
+        //Y2hhbmdnb3U6Y2hhbmdnb3U=  changgou:changgou
+        //Y2hhbmdnb3UxOmNoYW5nZ291Mg==  changgou1:changgou2
         byte[] decode = Base64.getDecoder().decode(new String("Y2hhbmdnb3UxOmNoYW5nZ291Mg==").getBytes());
         System.out.println(new String(decode));
     }
